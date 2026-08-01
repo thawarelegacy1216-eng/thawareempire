@@ -7,94 +7,214 @@
 <title>Thaware Empire</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+font-family:'Segoe UI',Arial,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
 background:#050505;
 color:white;
-text-align:center;
 }
 
+
 nav{
+position:fixed;
+top:0;
+width:100%;
 padding:20px;
-background:#000;
+background:rgba(0,0,0,.85);
+backdrop-filter:blur(10px);
+text-align:center;
+z-index:100;
 border-bottom:1px solid #333;
 }
 
-nav h2{
+.logo{
+font-size:30px;
+font-weight:bold;
+letter-spacing:4px;
 color:#d4af37;
-letter-spacing:2px;
 }
+
 
 .hero{
-padding:100px 20px;
-background:linear-gradient(135deg,#000,#1c1c1c);
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.95)),
+url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+
+background-size:cover;
+background-position:center;
+
+animation:fade 2s;
 }
 
+
 .hero h1{
-font-size:55px;
+font-size:65px;
 color:#d4af37;
+animation:slide 1.5s;
 }
+
 
 .hero p{
 font-size:22px;
 color:#ccc;
-margin:20px;
+max-width:700px;
+margin:25px;
 }
+
 
 .btn{
-display:inline-block;
 padding:15px 40px;
 background:#d4af37;
-color:#000;
+color:black;
 text-decoration:none;
-border-radius:8px;
 font-weight:bold;
+border-radius:30px;
+transition:.4s;
 }
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+
 
 section{
-padding:60px 20px;
+padding:80px 20px;
+text-align:center;
 }
 
+
+
 .card{
-background:#111;
-max-width:800px;
-margin:25px auto;
+max-width:850px;
+margin:30px auto;
 padding:35px;
-border-radius:15px;
+background:#111;
 border:1px solid #333;
+border-radius:20px;
+transition:.4s;
 }
+
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#d4af37;
+}
+
+
+
+.grid{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+}
+
+
+
+.box{
+background:#111;
+padding:30px;
+width:280px;
+border-radius:20px;
+border:1px solid #333;
+transition:.4s;
+}
+
+
+.box:hover{
+transform:scale(1.05);
+border-color:#d4af37;
+}
+
+
 
 h2{
 color:#d4af37;
 margin-bottom:15px;
 }
 
+
 p{
 color:#ccc;
-line-height:1.6;
 font-size:18px;
+line-height:1.7;
 }
+
+
 
 footer{
 background:#000;
-padding:25px;
+padding:30px;
+text-align:center;
 color:#777;
 }
+
+
+
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+
+@keyframes slide{
+from{
+transform:translateY(-50px);
+opacity:0;
+}
+to{
+transform:translateY(0);
+opacity:1;
+}
+}
+
+
+
+@media(max-width:600px){
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+}
+
 </style>
 
 </head>
 
+
 <body>
 
+
 <nav>
-<h2>THAWARE EMPIRE</h2>
+<div class="logo">
+THAWARE EMPIRE
+</div>
 </nav>
+
 
 
 <div class="hero">
@@ -102,7 +222,8 @@ color:#777;
 <h1>THAWARE EMPIRE</h1>
 
 <p>
-Building The Future Through AI, Cyber Security & Innovation
+Building The Future Through Artificial Intelligence,
+Cyber Security & Innovation
 </p>
 
 <a class="btn" href="#about">
@@ -112,17 +233,22 @@ Explore Empire
 </div>
 
 
+
 <section id="about">
 
+
 <div class="card">
+
 <h2>About Thaware Empire</h2>
 
 <p>
-Thaware Empire is a future-focused organization working towards
-technology, cybersecurity, artificial intelligence and innovative business solutions.
+Thaware Empire is a future-focused technology organization
+working towards AI, Cyber Security, innovation and
+next-generation business solutions.
 </p>
 
 </div>
+
 
 
 <div class="card">
@@ -130,26 +256,62 @@ technology, cybersecurity, artificial intelligence and innovative business solut
 <h2>Leadership</h2>
 
 <p>
-Founder: Vikas Thaware
+Founder<br>
+<b>Vikas Thaware</b>
 <br><br>
-CEO: Kaustub Thaware
+
+Chief Executive Officer<br>
+<b>Kaustub Thaware</b>
 </p>
 
 </div>
 
 
-<div class="card">
 
-<h2>Core Focus</h2>
+<h2>Our Core Divisions</h2>
+
+
+<div class="grid">
+
+
+<div class="box">
+
+<h2>Artificial Intelligence</h2>
 
 <p>
-• Artificial Intelligence<br>
-• Cyber Security<br>
-• Digital Innovation<br>
-• Future Business Solutions
+Advanced AI solutions and future technology development.
 </p>
 
 </div>
+
+
+
+<div class="box">
+
+<h2>Cyber Security</h2>
+
+<p>
+Digital protection systems and security innovation.
+</p>
+
+</div>
+
+
+
+<div class="box">
+
+<h2>Innovation</h2>
+
+<p>
+Creating technology-driven business solutions.
+</p>
+
+</div>
+
+
+</div>
+
+
 
 
 <div class="card">
@@ -157,21 +319,25 @@ CEO: Kaustub Thaware
 <h2>Our Vision</h2>
 
 <p>
-Creating a strong technology-driven ecosystem with leadership,
-innovation and trust.
+Creating a trusted global ecosystem through leadership,
+technology and continuous innovation.
 </p>
 
 </div>
 
 
+
 </section>
+
 
 
 <footer>
 
-© 2026 Thaware Empire. All Rights Reserved.
+© 2026 Thaware Empire<br>
+Innovation • Security • Excellence
 
 </footer>
+
 
 
 </body>
