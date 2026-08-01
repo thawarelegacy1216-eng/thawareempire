@@ -3,70 +3,87 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Thaware Empire</title>
 
 <style>
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
 background:#050505;
 color:white;
 text-align:center;
 }
 
-header{
-padding:90px 20px;
-background:linear-gradient(135deg,#000,#222);
+nav{
+padding:20px;
+background:#000;
+border-bottom:1px solid #333;
 }
 
-h1{
-font-size:52px;
+nav h2{
 color:#d4af37;
 letter-spacing:2px;
 }
 
-.tagline{
-font-size:20px;
+.hero{
+padding:100px 20px;
+background:linear-gradient(135deg,#000,#1c1c1c);
+}
+
+.hero h1{
+font-size:55px;
+color:#d4af37;
+}
+
+.hero p{
+font-size:22px;
 color:#ccc;
+margin:20px;
 }
 
 .btn{
 display:inline-block;
-margin-top:30px;
-padding:15px 35px;
+padding:15px 40px;
 background:#d4af37;
 color:#000;
 text-decoration:none;
+border-radius:8px;
 font-weight:bold;
-border-radius:10px;
 }
 
 section{
-padding:50px 20px;
+padding:60px 20px;
 }
 
 .card{
 background:#111;
-padding:30px;
+max-width:800px;
 margin:25px auto;
-max-width:750px;
+padding:35px;
 border-radius:15px;
 border:1px solid #333;
 }
 
 h2{
 color:#d4af37;
+margin-bottom:15px;
 }
 
 p{
 color:#ccc;
-font-size:18px;
 line-height:1.6;
+font-size:18px;
 }
 
 footer{
-padding:25px;
 background:#000;
+padding:25px;
 color:#777;
 }
 </style>
@@ -75,58 +92,87 @@ color:#777;
 
 <body>
 
-<header>
+<nav>
+<h2>THAWARE EMPIRE</h2>
+</nav>
+
+
+<div class="hero">
+
 <h1>THAWARE EMPIRE</h1>
 
-<p class="tagline">
-Building The Future Through Technology, Innovation & Security
+<p>
+Building The Future Through AI, Cyber Security & Innovation
 </p>
 
-<a class="btn" href="#about">Explore</a>
+<a class="btn" href="#about">
+Explore Empire
+</a>
 
-</header>
+</div>
 
 
 <section id="about">
 
 <div class="card">
-<h2>About Us</h2>
+<h2>About Thaware Empire</h2>
+
 <p>
-Thaware Empire is a future-focused business initiative working towards innovation,
-technology, cybersecurity and next-generation solutions.
+Thaware Empire is a future-focused organization working towards
+technology, cybersecurity, artificial intelligence and innovative business solutions.
 </p>
+
 </div>
 
 
 <div class="card">
+
+<h2>Leadership</h2>
+
+<p>
+Founder: Vikas Thaware
+<br><br>
+CEO: Kaustub Thaware
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>Core Focus</h2>
+
+<p>
+• Artificial Intelligence<br>
+• Cyber Security<br>
+• Digital Innovation<br>
+• Future Business Solutions
+</p>
+
+</div>
+
+
+<div class="card">
+
 <h2>Our Vision</h2>
+
 <p>
-Creating a strong ecosystem of technology, leadership and innovative business solutions.
+Creating a strong technology-driven ecosystem with leadership,
+innovation and trust.
 </p>
+
 </div>
 
-
-<div class="card">
-<h2>Technology Focus</h2>
-<p>
-Artificial Intelligence • Cyber Security • Digital Innovation • Future Solutions
-</p>
-</div>
-
-
-<div class="card">
-<h2>Contact</h2>
-<p>
-Coming Soon
-</p>
-</div>
 
 </section>
 
 
 <footer>
+
 © 2026 Thaware Empire. All Rights Reserved.
+
 </footer>
+
 
 </body>
 </html>
